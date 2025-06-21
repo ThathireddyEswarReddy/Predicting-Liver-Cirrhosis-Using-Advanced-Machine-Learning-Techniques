@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Predicting Liver Cirrhosis</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+  function toggleMenu() {
+    const nav = document.getElementById('navLinks');
+    nav.classList.toggle('show');
+  }
+</script>
+
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="logo">Predicting Liver Cirrhosis</div>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <nav class="nav-links" id="navLinks">
+      <a href="/index.html">Home</a>
+      <a href="/about.html">About</a>
+      <a href="/Prediction.html">Services</a>
+      <a href="/index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="introduction">
+        <div class="intro-container">
+            <h1>Revolutionizing Liver Care</h1>
+            
+            <p >
+                Liver cirrhosis is a chronic and progressive liver disease marked by irreversible scarring of liver tissue. 
+                If untreated, it can lead to severe complications and liver failure. 
+                This project aims to develop a machine learning predictive model for early detection and prognosis of liver cirrhosis.
+            </p>
+            <a  href="/about.html">About Us</a>
+        </div>
+    </section>
+
+    <!-- Services section-->
+    <section class="service" id="services">
+        <div class="services-container">
+            <h2 class="services-heading">Liver Cirrhosis Prediction</h2>
+            <p class="lead services-lead"> Revolutionizing liver disease management through intelligent machine learning 
+                models that analyze clinical, demographic, and lifestyle data to Predicting the Liver Cirrhosis.
+            </p>
+            <br>
+            <a href="/Prediction">
+                Prediction
+            </a>
+        </div>
+    </section>
+
+  
+  <section class="contact" id="contact">
+      <div class="contact-container">
+        <h1>Contact Us</h1>
+        <form class="contact-form"id="contact">
+          <label for="name" >Name</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email"  required />
+
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+        </form>
+    </div>
+</section>
+  
+    <footer>
+        &copy; 2025 Revolutionizing Liver Care | All rights reserved
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
